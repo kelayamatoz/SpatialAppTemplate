@@ -1,4 +1,4 @@
-name := "template"
+name := "HelloSpatial"
 
 version := "0.1"
 
