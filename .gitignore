@@ -1,2 +1,6 @@
 .idea
 .DS_Store
+gen/
+project/
+reports/
+target/
