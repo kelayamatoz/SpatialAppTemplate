@@ -1,4 +1,4 @@
-name := "HelloSpatial"
+name := "app"
 
 version := "0.1"
 
