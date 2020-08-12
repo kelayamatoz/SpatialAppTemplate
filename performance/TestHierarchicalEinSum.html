@@ -1,0 +1,1175 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head><body>
+
+    <div data-role="main" class="ui-content" style="overflow-x:scroll;">
+      <h2>Controller Diagram for TestHierarchicalEinSum (Options: SyncMem, Retimed)</h2><h2><font color="red">Instrumentation Annotations (ArgIns: , ArgIOs: ) </font></h2>
+      <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+  
+<!-- Begin x55 -->
+<TD>
+<font size = "6"><a href=IR.html#x55 target=_blank>x55</a>: Sequenced <font size = "4"> (OuterControl)</font>
+<br><font color="red"> 20215 cycles/iter<br><font size="2">(20215 total cycles, 1 total iters)<br>[1 iters/parent execution]</font></font><br>
+<br><font size = "2">TestHierarchicalEinSum.scala:15:11 <font color="grey">-     Accel {</font></font>
+
+  <div data-role="collapsible"><h4> </h4>
+  <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+  <!-- Begin x650 -->
+  <TD>
+  <font size = "6"><a href=IR.html#x650 target=_blank>x650</a>: Pipelined <font size = "4"> (OuterControl)</font>
+<br><font color="red"> 20037 cycles/iter<br><font size="2">(20037 total cycles, 1 total iters)<br>[1 iters/parent execution]</font></font><br>
+  <br><font size = "2">TestHierarchicalEinSum.scala:17:76 <font color="grey">-       Foreach(I32(32) by I32(1) par I32(1), I32(96) by I32(32) par I32(1)) {</font></font>
+  <br><font size = "1">Counter: <a href=IR.html#x181 target=_blank>x181</a></font>
+
+    <div data-role="collapsible"><h4> </h4>
+    <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+    <!-- Begin x649 -->
+    <TD>
+    <font size = "6"><a href=IR.html#x649 target=_blank>x649</a>: ForkJoin <font size = "4"> (OuterControl)</font>
+<br><font color="red"> 206 cycles/iter<br><font size="2">(19805 total cycles, 96 total iters)<br>[96 iters/parent execution]</font></font><br>
+    <br><font size = "2">BindingTransformer.scala:78:18 <font color="grey">-             stage(ParallelPipe(scala.collection.immutable.Set[Bit](), stageBlock(bundledStms.foreach(visit))))</font></font>
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<font size=1>NBuf Connections</font>
+      <div data-role="collapsible"><h4> </h4>
+      <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #14fb82"><font size = "1"><a href=IR.html#x215 target=_blank>x215</a> (BankedSRAM "x_25_cache_13")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e0e0d1"><font size = "1"><a href=IR.html#x200 target=_blank>x200</a> (BankedSRAM "x_24_cache_14")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #14fb82"><font size = "1"><a href=IR.html#x195 target=_blank>x195</a> (BankedSRAM "x_24_cache_9")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #aed919"><font size = "1"><a href=IR.html#x210 target=_blank>x210</a> (BankedSRAM "x_25_cache_8")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #f2e6ff"><font size = "1"><a href=IR.html#x190 target=_blank>x190</a> (BankedSRAM "x_24_cache_4")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccffcc"><font size = "1"><a href=IR.html#x214 target=_blank>x214</a> (BankedSRAM "x_25_cache_12")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce6ff"><font size = "1"><a href=IR.html#x207 target=_blank>x207</a> (BankedSRAM "x_25_cache_5")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #22f5e2"><font size = "1"><a href=IR.html#x186 target=_blank>x186</a> (BankedSRAM "x_24_cache_0")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ecc6d9"><font size = "1"><a href=IR.html#x203 target=_blank>x203</a> (BankedSRAM "x_25_cache_1")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce0ff"><font size = "1"><a href=IR.html#x199 target=_blank>x199</a> (BankedSRAM "x_24_cache_13")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #f2e6ff"><font size = "1"><a href=IR.html#x194 target=_blank>x194</a> (BankedSRAM "x_24_cache_8")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce0ff"><font size = "1"><a href=IR.html#x209 target=_blank>x209</a> (BankedSRAM "x_25_cache_7")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #c5989e"><font size = "1"><a href=IR.html#x198 target=_blank>x198</a> (BankedSRAM "x_24_cache_12")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce0ff"><font size = "1"><a href=IR.html#x213 target=_blank>x213</a> (BankedSRAM "x_25_cache_11")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #14fb82"><font size = "1"><a href=IR.html#x208 target=_blank>x208</a> (BankedSRAM "x_25_cache_6")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ffcccc"><font size = "1"><a href=IR.html#x187 target=_blank>x187</a> (BankedSRAM "x_24_cache_1")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e699ff"><font size = "1"><a href=IR.html#x204 target=_blank>x204</a> (BankedSRAM "x_25_cache_2")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e0b77a"><font size = "1"><a href=IR.html#x191 target=_blank>x191</a> (BankedSRAM "x_24_cache_5")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #22f5e2"><font size = "1"><a href=IR.html#x205 target=_blank>x205</a> (BankedSRAM "x_25_cache_3")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #efc11b"><font size = "1"><a href=IR.html#x212 target=_blank>x212</a> (BankedSRAM "x_25_cache_10")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #f2ffcc"><font size = "1"><a href=IR.html#x193 target=_blank>x193</a> (BankedSRAM "x_24_cache_7")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccb6ff"><font size = "1"><a href=IR.html#x188 target=_blank>x188</a> (BankedSRAM "x_24_cache_2")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ffcccc"><font size = "1"><a href=IR.html#x197 target=_blank>x197</a> (BankedSRAM "x_24_cache_11")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e6b3cc"><font size = "1"><a href=IR.html#x192 target=_blank>x192</a> (BankedSRAM "x_24_cache_6")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ecc6d9"><font size = "1"><a href=IR.html#x201 target=_blank>x201</a> (BankedSRAM "x_24_cache_15")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #aed919"><font size = "1"><a href=IR.html#x206 target=_blank>x206</a> (BankedSRAM "x_25_cache_4")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #eefb21"><font size = "1"><a href=IR.html#x211 target=_blank>x211</a> (BankedSRAM "x_25_cache_9")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e6b3cc"><font size = "1"><a href=IR.html#x216 target=_blank>x216</a> (BankedSRAM "x_25_cache_14")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #f2ffcc"><font size = "1"><a href=IR.html#x189 target=_blank>x189</a> (BankedSRAM "x_24_cache_3")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #22f5e2"><font size = "1"><a href=IR.html#x196 target=_blank>x196</a> (BankedSRAM "x_24_cache_10")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #14fb82"><font size = "1"><a href=IR.html#x202 target=_blank>x202</a> (BankedSRAM "x_25_cache_0")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccb6ff"><font size = "1"><a href=IR.html#x217 target=_blank>x217</a> (BankedSRAM "x_25_cache_15")
+      </font></div></p>
+      </TABLE></div>
+    </TABLE></div>
+
+      <div data-role="collapsible"><h4> </h4>
+      <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+      <!-- Begin x285 -->
+      <TD>
+      <font size = "6"><a href=IR.html#x285 target=_blank>x285</a>: Streaming <font size = "4"> (OuterControl)</font>
+<br><font color="red"> 200 cycles/iter<br><font size="2">(19233 total cycles, 96 total iters)<br>[1 iters/parent execution]</font></font><br>
+      <br><font size = "2">TestHierarchicalEinSum.scala:23:22 <font color="grey">-           x_24_cache load x_24_ConCat_DRAM(idx0 :: idx0 + I32(1),</font></font>
+
+        <div data-role="collapsible"><h4> </h4>
+        <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+        <!-- Begin x231 -->
+        <TD>
+        <font size = "6"><a href=IR.html#x231 target=_blank>x231</a>: Sequenced <font size = "4"> (InnerControl)</font>
+<br><font color="red"> 7 cycles/iter<br><p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e5e7e9"><font size="4"># stalled: 0,<br># idle: 0</font><br></div><br><font size="2">(672 total cycles, 96 total iters)<br>[1 iters/parent execution]</font></font><br>
+        <br><font size = "2">StreamTransformer.scala:61:119 <font color="grey">-           val lhs3 = stageWithFlow(OpForeach(ens, newcchain, stageBlock{blk.stms.foreach(visit)}, newiters, stopWhen)){lhs2 => transferData(x, lhs2)}</font></font>
+        <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=4,  <b>II=4</b></font></mark></p>
+
+        <div style="border:1px solid black"><font size = "2">Stream Info</font><br><font size = "1"> 
+<p align="right">Set(x218)----->
+        </font></div>
+        </TD>
+        <!-- End x231-->
+        <!-- Begin x284 -->
+        <TD>
+        <font size = "6"><a href=IR.html#x284 target=_blank>x284</a>: Pipelined <font size = "4"> (InnerControl)</font>
+<br><font color="red"> 196 cycles/iter<br><p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e5e7e9"><font size="4"># stalled: 0,<br># idle: 17985</font><br></div><br><font size="2">(18849 total cycles, 96 total iters)<br>[1 iters/parent execution]</font></font><br>
+        <br><font size = "2">StreamTransformer.scala:45:148 <font color="grey">-           stageWithFlow(OpForeach(ens, subst(cchain).asInstanceOf[CounterChain], stageBlock{blk.stms.foreach(visit)}, newiters ++ iters, stopWhen)){lhs2 => transferData(x, lhs2)}</font></font>
+        <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=2,  II=1</font></mark></p>
+        <br><font size = "1">Counter: <a href=IR.html#x235 target=_blank>x235</a></font>
+
+        <div style="border:1px solid black"><font size = "2">Stream Info</font><br><font size = "1"> 
+<p align="left">----->Set(x219)
+        </font></div>
+        </TD>
+        <!-- End x284-->
+        </TABLE></div>
+      </TD>
+      <!-- End x285-->
+      <!-- Begin x337 -->
+      <TD>
+      <font size = "6"><a href=IR.html#x337 target=_blank>x337</a>: Streaming <font size = "4"> (OuterControl)</font>
+<br><font color="red"> 185 cycles/iter<br><font size="2">(17853 total cycles, 96 total iters)<br>[1 iters/parent execution]</font></font><br>
+      <br><font size = "2">TestHierarchicalEinSum.scala:25:22 <font color="grey">-           x_25_cache load x_25_ConCat_DRAM(idx1 :: idx1 + I32(32) par dPar)</font></font>
+
+        <div data-role="collapsible"><h4> </h4>
+        <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+        <!-- Begin x295 -->
+        <TD>
+        <font size = "6"><a href=IR.html#x295 target=_blank>x295</a>: Sequenced <font size = "4"> (InnerControl)</font>
+<br><font color="red"> 5 cycles/iter<br><p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e5e7e9"><font size="4"># stalled: 0,<br># idle: 0</font><br></div><br><font size="2">(480 total cycles, 96 total iters)<br>[1 iters/parent execution]</font></font><br>
+        <br><font size = "2">TestHierarchicalEinSum.scala:25:22 <font color="grey">-           x_25_cache load x_25_ConCat_DRAM(idx1 :: idx1 + I32(32) par dPar)</font></font>
+        <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=2,  <b>II=2</b></font></mark></p>
+
+        <div style="border:1px solid black"><font size = "2">Stream Info</font><br><font size = "1"> 
+<p align="right">Set(x286)----->
+        </font></div>
+        </TD>
+        <!-- End x295-->
+        <!-- Begin x336 -->
+        <TD>
+        <font size = "6"><a href=IR.html#x336 target=_blank>x336</a>: Pipelined <font size = "4"> (InnerControl)</font>
+<br><font color="red"> 181 cycles/iter<br><p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e5e7e9"><font size="4"># stalled: 0,<br># idle: 16605</font><br></div><br><font size="2">(17469 total cycles, 96 total iters)<br>[1 iters/parent execution]</font></font><br>
+        <br><font size = "2">TestHierarchicalEinSum.scala:25:22 <font color="grey">-           x_25_cache load x_25_ConCat_DRAM(idx1 :: idx1 + I32(32) par dPar)</font></font>
+        <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=2,  II=1</font></mark></p>
+        <br><font size = "1">Counter: <a href=IR.html#x298 target=_blank>x298</a></font>
+
+        <div style="border:1px solid black"><font size = "2">Stream Info</font><br><font size = "1"> 
+<p align="left">----->Set(x287)
+        </font></div>
+        </TD>
+        <!-- End x336-->
+        </TABLE></div>
+      </TD>
+      <!-- End x337-->
+      </TABLE></div>
+    </TD>
+    <!-- End x649-->
+    <!-- Begin x559 -->
+    <TD>
+    <font size = "6"><a href=IR.html#x559 target=_blank>x559</a>: Pipelined <font size = "4"> (InnerControl)</font>
+<br><font color="red"> 21 cycles/iter<br><font size="2">(2016 total cycles, 96 total iters)<br>[96 iters/parent execution]</font></font><br>
+    <br><font size = "2">TestHierarchicalEinSum.scala:34:13 <font color="grey">-           } {_ + _}</font></font>
+    <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=16,  II=1</font></mark></p>
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<font size=1>NBuf Connections</font>
+      <div data-role="collapsible"><h4> </h4>
+      <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #14fb82"><font size = "1"><a href=IR.html#x215 target=_blank>x215</a> (BankedSRAM "x_25_cache_13")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e0e0d1"><font size = "1"><a href=IR.html#x200 target=_blank>x200</a> (BankedSRAM "x_24_cache_14")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #14fb82"><font size = "1"><a href=IR.html#x195 target=_blank>x195</a> (BankedSRAM "x_24_cache_9")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #aed919"><font size = "1"><a href=IR.html#x210 target=_blank>x210</a> (BankedSRAM "x_25_cache_8")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #f2e6ff"><font size = "1"><a href=IR.html#x190 target=_blank>x190</a> (BankedSRAM "x_24_cache_4")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccffcc"><font size = "1"><a href=IR.html#x214 target=_blank>x214</a> (BankedSRAM "x_25_cache_12")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce6ff"><font size = "1"><a href=IR.html#x207 target=_blank>x207</a> (BankedSRAM "x_25_cache_5")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #22f5e2"><font size = "1"><a href=IR.html#x186 target=_blank>x186</a> (BankedSRAM "x_24_cache_0")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ecc6d9"><font size = "1"><a href=IR.html#x203 target=_blank>x203</a> (BankedSRAM "x_25_cache_1")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce0ff"><font size = "1"><a href=IR.html#x199 target=_blank>x199</a> (BankedSRAM "x_24_cache_13")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #f2e6ff"><font size = "1"><a href=IR.html#x194 target=_blank>x194</a> (BankedSRAM "x_24_cache_8")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce0ff"><font size = "1"><a href=IR.html#x209 target=_blank>x209</a> (BankedSRAM "x_25_cache_7")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #c5989e"><font size = "1"><a href=IR.html#x198 target=_blank>x198</a> (BankedSRAM "x_24_cache_12")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce0ff"><font size = "1"><a href=IR.html#x213 target=_blank>x213</a> (BankedSRAM "x_25_cache_11")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #14fb82"><font size = "1"><a href=IR.html#x208 target=_blank>x208</a> (BankedSRAM "x_25_cache_6")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ffcccc"><font size = "1"><a href=IR.html#x187 target=_blank>x187</a> (BankedSRAM "x_24_cache_1")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e699ff"><font size = "1"><a href=IR.html#x204 target=_blank>x204</a> (BankedSRAM "x_25_cache_2")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e0b77a"><font size = "1"><a href=IR.html#x191 target=_blank>x191</a> (BankedSRAM "x_24_cache_5")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #22f5e2"><font size = "1"><a href=IR.html#x205 target=_blank>x205</a> (BankedSRAM "x_25_cache_3")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #efc11b"><font size = "1"><a href=IR.html#x212 target=_blank>x212</a> (BankedSRAM "x_25_cache_10")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #f2ffcc"><font size = "1"><a href=IR.html#x193 target=_blank>x193</a> (BankedSRAM "x_24_cache_7")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccb6ff"><font size = "1"><a href=IR.html#x188 target=_blank>x188</a> (BankedSRAM "x_24_cache_2")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ffcccc"><font size = "1"><a href=IR.html#x197 target=_blank>x197</a> (BankedSRAM "x_24_cache_11")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e6b3cc"><font size = "1"><a href=IR.html#x192 target=_blank>x192</a> (BankedSRAM "x_24_cache_6")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ecc6d9"><font size = "1"><a href=IR.html#x201 target=_blank>x201</a> (BankedSRAM "x_24_cache_15")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #aed919"><font size = "1"><a href=IR.html#x206 target=_blank>x206</a> (BankedSRAM "x_25_cache_4")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #eefb21"><font size = "1"><a href=IR.html#x211 target=_blank>x211</a> (BankedSRAM "x_25_cache_9")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e6b3cc"><font size = "1"><a href=IR.html#x216 target=_blank>x216</a> (BankedSRAM "x_25_cache_14")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #f2ffcc"><font size = "1"><a href=IR.html#x189 target=_blank>x189</a> (BankedSRAM "x_24_cache_3")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #22f5e2"><font size = "1"><a href=IR.html#x196 target=_blank>x196</a> (BankedSRAM "x_24_cache_10")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #14fb82"><font size = "1"><a href=IR.html#x202 target=_blank>x202</a> (BankedSRAM "x_25_cache_0")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccb6ff"><font size = "1"><a href=IR.html#x217 target=_blank>x217</a> (BankedSRAM "x_25_cache_15")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #d9b3ff"><font size = "1"><a href=IR.html#x341 target=_blank>x341</a> (FF "update_0")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #17eaf7"><font size = "1"><a href=IR.html#x342 target=_blank>x342</a> (FF "update_1")
+      </font></div></p>
+      </TABLE></div>
+    </TABLE></div>
+    <br><font size = "1">Counter: <a href=IR.html#x344 target=_blank>x344</a></font>
+
+    </TD>
+    <!-- End x559-->
+    <!-- Begin x574 -->
+    <TD>
+    <font size = "6"><a href=IR.html#x574 target=_blank>x574</a>: Sequenced <font size = "4"> (InnerControl)</font>
+<br><font color="red"> 5 cycles/iter<br><font size="2">(480 total cycles, 96 total iters)<br>[96 iters/parent execution]</font></font><br>
+    <br><font size = "2">PipeInserter.scala:183:18 <font color="grey">-             Pipe {</font></font>
+    <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=2,  <b>II=2</b></font></mark></p>
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<font size=1>NBuf Connections</font>
+      <div data-role="collapsible"><h4> </h4>
+      <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e0e0d1"><font size = "1"><a href=IR.html#x560 target=_blank>x560</a> (FF "")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #d9b3ff"><font size = "1"><a href=IR.html#x341 target=_blank>x341</a> (FF "update_0")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #17eaf7"><font size = "1"><a href=IR.html#x342 target=_blank>x342</a> (FF "update_1")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ee6c56"><font size = "1"><a href=IR.html#x339 target=_blank>x339</a> (FF "accum_1")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ee6c56"><font size = "1"><a href=IR.html#x561 target=_blank>x561</a> (FF "")
+      </font></div></p>
+      </TABLE></div>
+    </TABLE></div>
+
+    </TD>
+    <!-- End x574-->
+    <!-- Begin x584 -->
+    <TD>
+    <font size = "6"><a href=IR.html#x584 target=_blank>x584</a>: Fork <font size = "4"> (InnerControl)</font>
+<br><font color="red"> 5 cycles/iter<br><font size="2">(480 total cycles, 96 total iters)<br>[96 iters/parent execution]</font></font><br>
+    <br><font size = "2">TestHierarchicalEinSum.scala:37:11 <font color="grey">-           if (idx1 == I32(64)) {</font></font>
+    <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=1,  II=1</font></mark></p>
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<font size=1>NBuf Connections</font>
+      <div data-role="collapsible"><h4> </h4>
+      <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ee6c56"><font size = "1"><a href=IR.html#x561 target=_blank>x561</a> (FF "")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e0e0d1"><font size = "1"><a href=IR.html#x560 target=_blank>x560</a> (FF "")
+      </font></div></p>
+      <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ee6c56"><font size = "1"><a href=IR.html#x339 target=_blank>x339</a> (FF "accum_1")
+      </font></div></p>
+      </TABLE></div>
+    </TABLE></div>
+
+      <div data-role="collapsible"><h4> </h4>
+      <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+      <!-- Begin x582 -->
+      <TD>
+      <font size = "6"><a href=IR.html#x582 target=_blank>x582</a>: Sequenced <font size = "4"> (InnerControl)</font>
+<br><font color="red"> 5 cycles/iter<br><font size="2">(160 total cycles, 32 total iters)<br>[0 iters/parent execution]</font></font><br>
+      <br><font size = "2">TestHierarchicalEinSum.scala:37:11 <font color="grey">-           if (idx1 == I32(64)) {</font></font>
+      <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=1,  II=1</font></mark></p>
+
+      </TD>
+      <!-- End x582-->
+      <!-- Begin x583 -->
+      <TD>
+      <font size = "6"><a href=IR.html#x583 target=_blank>x583</a>: Sequenced <font size = "4"> (InnerControl)</font>
+<br><font color="red"> 5 cycles/iter<br><font size="2">(320 total cycles, 64 total iters)<br>[0 iters/parent execution]</font></font><br>
+      <br><font size = "2">TestHierarchicalEinSum.scala:37:11 <font color="grey">-           if (idx1 == I32(64)) {</font></font>
+      <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=1,  II=1</font></mark></p>
+
+      </TD>
+      <!-- End x583-->
+      </TABLE></div>
+    </TD>
+    <!-- End x584-->
+    </TABLE></div>
+  </TD>
+  <!-- End x650-->
+  <!-- Begin x627 -->
+  <TD>
+  <font size = "6"><a href=IR.html#x627 target=_blank>x627</a>: Streaming <font size = "4"> (OuterControl)</font>
+<br><font color="red"> 173 cycles/iter<br><font size="2">(173 total cycles, 1 total iters)<br>[1 iters/parent execution]</font></font><br>
+  <br><font size = "2">TestHierarchicalEinSum.scala:42:55 <font color="grey">-       x_6_Tensor_L15_DRAM(I32(0) :: I32(32) par dPar) store x_6_cache</font></font>
+
+    <div data-role="collapsible"><h4> </h4>
+    <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+    <!-- Begin x593 -->
+    <TD>
+    <font size = "6"><a href=IR.html#x593 target=_blank>x593</a>: Sequenced <font size = "4"> (InnerControl)</font>
+<br><font color="red"> 3 cycles/iter<br><p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e5e7e9"><font size="4"># stalled: 0,<br># idle: 0</font><br></div><br><font size="2">(3 total cycles, 1 total iters)<br>[1 iters/parent execution]</font></font><br>
+    <br><font size = "2">TestHierarchicalEinSum.scala:42:55 <font color="grey">-       x_6_Tensor_L15_DRAM(I32(0) :: I32(32) par dPar) store x_6_cache</font></font>
+    <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=0,  II=0</font></mark></p>
+
+    <div style="border:1px solid black"><font size = "2">Stream Info</font><br><font size = "1"> 
+<p align="right">Set(x586)----->
+    </font></div>
+    </TD>
+    <!-- End x593-->
+    <!-- Begin x622 -->
+    <TD>
+    <font size = "6"><a href=IR.html#x622 target=_blank>x622</a>: Pipelined <font size = "4"> (InnerControl)</font>
+<br><font color="red"> 13 cycles/iter<br><p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e5e7e9"><font size="4"># stalled: 0,<br># idle: 0</font><br></div><br><font size="2">(13 total cycles, 1 total iters)<br>[1 iters/parent execution]</font></font><br>
+    <br><font size = "2">TestHierarchicalEinSum.scala:42:55 <font color="grey">-       x_6_Tensor_L15_DRAM(I32(0) :: I32(32) par dPar) store x_6_cache</font></font>
+    <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=2,  II=1</font></mark></p>
+    <br><font size = "1">Counter: <a href=IR.html#x595 target=_blank>x595</a></font>
+
+    <div style="border:1px solid black"><font size = "2">Stream Info</font><br><font size = "1"> 
+<p align="right">Set(x587)----->
+    </font></div>
+    </TD>
+    <!-- End x622-->
+    <!-- Begin x626 -->
+    <TD>
+    <font size = "6"><a href=IR.html#x626 target=_blank>x626</a>: Sequenced <font size = "4"> (InnerControl)</font>
+<br><font color="red"> 169 cycles/iter<br><p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e5e7e9"><font size="4"># stalled: 0,<br># idle: 167</font><br></div><br><font size="2">(169 total cycles, 1 total iters)<br>[1 iters/parent execution]</font></font><br>
+    <br><font size = "2">TestHierarchicalEinSum.scala:42:55 <font color="grey">-       x_6_Tensor_L15_DRAM(I32(0) :: I32(32) par dPar) store x_6_cache</font></font>
+    <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=1,  II=1</font></mark></p>
+
+    <div style="border:1px solid black"><font size = "2">Stream Info</font><br><font size = "1"> 
+<p align="left">----->Set(x588)
+    </font></div>
+    </TD>
+    <!-- End x626-->
+    </TABLE></div>
+  </TD>
+  <!-- End x627-->
+  </TABLE></div>
+</TD>
+<!-- End x55-->
+</TABLE>
+<h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<!-- Begin NBuf Mems -->
+<TD>
+NBuf Mems
+  <div data-role="collapsible"><h4> </h4>
+  <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #14fb82"><font size = "1"><a href=IR.html#x215 target=_blank>x215</a> (BankedSRAM "x_25_cache_13")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e0e0d1"><font size = "1"><a href=IR.html#x200 target=_blank>x200</a> (BankedSRAM "x_24_cache_14")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #14fb82"><font size = "1"><a href=IR.html#x195 target=_blank>x195</a> (BankedSRAM "x_24_cache_9")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #aed919"><font size = "1"><a href=IR.html#x210 target=_blank>x210</a> (BankedSRAM "x_25_cache_8")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #f2e6ff"><font size = "1"><a href=IR.html#x190 target=_blank>x190</a> (BankedSRAM "x_24_cache_4")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccffcc"><font size = "1"><a href=IR.html#x214 target=_blank>x214</a> (BankedSRAM "x_25_cache_12")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce6ff"><font size = "1"><a href=IR.html#x207 target=_blank>x207</a> (BankedSRAM "x_25_cache_5")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #22f5e2"><font size = "1"><a href=IR.html#x186 target=_blank>x186</a> (BankedSRAM "x_24_cache_0")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ecc6d9"><font size = "1"><a href=IR.html#x203 target=_blank>x203</a> (BankedSRAM "x_25_cache_1")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce0ff"><font size = "1"><a href=IR.html#x199 target=_blank>x199</a> (BankedSRAM "x_24_cache_13")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #f2e6ff"><font size = "1"><a href=IR.html#x194 target=_blank>x194</a> (BankedSRAM "x_24_cache_8")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce0ff"><font size = "1"><a href=IR.html#x209 target=_blank>x209</a> (BankedSRAM "x_25_cache_7")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #c5989e"><font size = "1"><a href=IR.html#x198 target=_blank>x198</a> (BankedSRAM "x_24_cache_12")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce0ff"><font size = "1"><a href=IR.html#x213 target=_blank>x213</a> (BankedSRAM "x_25_cache_11")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #14fb82"><font size = "1"><a href=IR.html#x208 target=_blank>x208</a> (BankedSRAM "x_25_cache_6")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ffcccc"><font size = "1"><a href=IR.html#x187 target=_blank>x187</a> (BankedSRAM "x_24_cache_1")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e699ff"><font size = "1"><a href=IR.html#x204 target=_blank>x204</a> (BankedSRAM "x_25_cache_2")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e0b77a"><font size = "1"><a href=IR.html#x191 target=_blank>x191</a> (BankedSRAM "x_24_cache_5")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #22f5e2"><font size = "1"><a href=IR.html#x205 target=_blank>x205</a> (BankedSRAM "x_25_cache_3")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #efc11b"><font size = "1"><a href=IR.html#x212 target=_blank>x212</a> (BankedSRAM "x_25_cache_10")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #f2ffcc"><font size = "1"><a href=IR.html#x193 target=_blank>x193</a> (BankedSRAM "x_24_cache_7")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccb6ff"><font size = "1"><a href=IR.html#x188 target=_blank>x188</a> (BankedSRAM "x_24_cache_2")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ffcccc"><font size = "1"><a href=IR.html#x197 target=_blank>x197</a> (BankedSRAM "x_24_cache_11")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e6b3cc"><font size = "1"><a href=IR.html#x192 target=_blank>x192</a> (BankedSRAM "x_24_cache_6")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ecc6d9"><font size = "1"><a href=IR.html#x201 target=_blank>x201</a> (BankedSRAM "x_24_cache_15")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #aed919"><font size = "1"><a href=IR.html#x206 target=_blank>x206</a> (BankedSRAM "x_25_cache_4")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #eefb21"><font size = "1"><a href=IR.html#x211 target=_blank>x211</a> (BankedSRAM "x_25_cache_9")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e6b3cc"><font size = "1"><a href=IR.html#x216 target=_blank>x216</a> (BankedSRAM "x_25_cache_14")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #f2ffcc"><font size = "1"><a href=IR.html#x189 target=_blank>x189</a> (BankedSRAM "x_24_cache_3")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #22f5e2"><font size = "1"><a href=IR.html#x196 target=_blank>x196</a> (BankedSRAM "x_24_cache_10")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(1, 32) + pads List(0, 0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1, 1), p = List(1, 4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #14fb82"><font size = "1"><a href=IR.html#x202 target=_blank>x202</a> (BankedSRAM "x_25_cache_0")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccb6ff"><font size = "1"><a href=IR.html#x217 target=_blank>x217</a> (BankedSRAM "x_25_cache_15")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBufs*volume = 64
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ee6c56"><font size = "1"><a href=IR.html#x561 target=_blank>x561</a> (FF "")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 1 (dims List() + pads List(), bw = 1)
+<br>nBufs*volume = 2
+<br>nBanks = List(1), B = List(1), a = List(), p = List()
+<br>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #e0e0d1"><font size = "1"><a href=IR.html#x560 target=_blank>x560</a> (FF "")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 1 (dims List() + pads List(), bw = 1)
+<br>nBufs*volume = 2
+<br>nBanks = List(1), B = List(1), a = List(), p = List()
+<br>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ee6c56"><font size = "1"><a href=IR.html#x339 target=_blank>x339</a> (FF "accum_1")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 1 (dims List() + pads List(), bw = 32)
+<br>nBufs*volume = 2
+<br>nBanks = List(1), B = List(1), a = List(), p = List()
+<br>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #d9b3ff"><font size = "1"><a href=IR.html#x341 target=_blank>x341</a> (FF "update_0")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 1 (dims List() + pads List(), bw = 32)
+<br>nBufs*volume = 2
+<br>nBanks = List(1), B = List(1), a = List(), p = List()
+<br>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #17eaf7"><font size = "1"><a href=IR.html#x342 target=_blank>x342</a> (FF "update_1")
+<br>lca = <a href=IR.html#x650 target=_blank>x650</a>
+<br>nBufs = 2
+<br>volume = 1 (dims List() + pads List(), bw = 32)
+<br>nBufs*volume = 2
+<br>nBanks = List(1), B = List(1), a = List(), p = List()
+<br>
+  </font></div></p>
+  </TABLE></div>
+</TD>
+<!-- End NBuf Mems-->
+<!-- Begin Single-Buffered Mems -->
+<TD>
+Single-Buffered Mems
+  <div data-role="collapsible"><h4> </h4>
+  <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce6ff"><font size = "1"><a href=IR.html#x178 target=_blank>x178</a> (BankedSRAM "x_6_cache_0")
+<br>volume = 32 (dims List(32) + pads List(0), bw = 32)
+<br>nBanks = List(4), B = List(1), a = List(1), p = List(4)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">4</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce6ff"><font size = "1"><a href=IR.html#x343 target=_blank>x343</a> (FF "update_2")
+<br>volume = 1 (dims List() + pads List(), bw = 32)
+<br>nBanks = List(1), B = List(1), a = List(), p = List()
+<br>
+  </font></div></p>
+  <p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #cce6ff"><font size = "1"><a href=IR.html#x338 target=_blank>x338</a> (FF "accum_0")
+<br>volume = 1 (dims List() + pads List(), bw = 32)
+<br>nBanks = List(1), B = List(1), a = List(), p = List()
+<br>
+  </font></div></p>
+  </TABLE></div>
+</TD>
+<!-- End Single-Buffered Mems-->
+</body>
+</html>
+
+<p><p><p>
+
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+  <TD><font size = "6">Instrumentation Guide<br><br>
+  <div data-role="collapsible">
+  <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+    <TD><font size = "6">Pipelined (OuterControl)<br>
+    <div data-role="collapsible">
+    <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+      <TD><font size = "6">View Sample Waveform:<br>
+      <div data-role="collapsible">
+      <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+
+
+      <font size = "2"><tt><pre>
+
+    <TD><font size = "6">Sample Waveform:<br><font size = "2"><tt><pre><font color="red">
+  parent_en ____|```````````````````````````````````````````````````````````````````````````````````````````````````````````````````|__
+<br></font>
+parent_done ________________________________________________________________________________________________________________________|__
+<font color="red">
+            5 cycles / iter
+                
+                <----->
+
+  child0_en ____|`````|___|`````|__________|`````|__________|`````|__________|`````|___________________________________________________
+<br>
+  child1_en ______________|`````````````|__|`````````````|__|`````````````|__|`````````````|__|`````````````|__________________________
+<br>
+  child2_en _______________________________|``|_____________|``|_____________|``|_____________|``|_____________|``|____________________
+<br>
+  child3_en ________________________________________________|```````|________|```````|________|```````|________|```````|__|```````|____
+<br></font>
+child0_done __________|_________|________________|________________|________________|___________________________________________________
+<br>
+child1_done ____________________________|________________|________________|________________|________________|__________________________
+<br>
+child2_done __________________________________|________________|________________|________________|________________|____________________
+<br>
+child3_done ________________________________________________________|________________|________________|________________|__________|____
+
+                                                                    ^                ^                ^                ^          ^
+       
+                                                                    |________________|________________|________________|__________|                     
+       
+                                                                                                      |                                      
+       
+                                                                                             5 iters/parent execution                                                                            
+
+</pre></tt>
+
+      </font>
+
+      </TABLE></div>
+      </TD>
+
+      <TD><font size = "6">View Sample Tree:<br>
+      <div data-role="collapsible">
+      <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+        <!--Begin Parent -->
+        <TD><b>Parent - <font color="red"> 64 cycles/iter<br><font size="2">(115 total cycles, 1 total iters)<br>[# iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+
+          <div data-role="collapsible">
+          <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+            <!--Begin Child0 -->
+            <TD><b>Child0 - <font color="red"> 5 cycles/iter<br><font size="2">(25 total cycles, 5 total iters)<br>[5 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+            <!--Begin Child1 -->
+            <TD><b>Child1 - <font color="red"> 13 cycles/iter<br><font size="2">(65 total cycles, 5 total iters)<br>[5 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+            <!--Begin Child2 -->
+            <TD><b>Child2 - <font color="red"> 2 cycles/iter<br><font size="2">(10 total cycles, 5 total iters)<br>[5 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+            <!--Begin Child3 -->
+            <TD><b>Child3 - <font color="red"> 7 cycles/iter<br><font size="2">(35 total cycles, 5 total iters)<br>[5 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+
+        </TABLE></div>
+        </TD>
+        <!-- Close Parent -->
+
+
+      </TABLE></div>
+      </TD>
+      <!-- Close View Tree -->
+
+    </TABLE></div>
+    </TD>
+    <!-- Close Metapipe -->
+
+    <TD><font size = "6">Sequenced (OuterControl)<br>
+    <div data-role="collapsible">
+    <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+      <TD><font size = "6">View Sample Waveform:<br>
+      <div data-role="collapsible">
+      <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+      <font size = "2"><tt><pre>
+
+    <TD><font size = "6">Sample Waveform:<br><font size = "2"><tt><pre><font color="red">
+  parent_en ____|```````````````````````````````````````````````````````````````````````````````````````````|_
+<br></font>
+parent_done ________________________________________________________________________________________________|_
+<font color="red">
+            5 cycles / iter
+                
+                <----->
+
+  child0_en ____|`````|________________________|`````|________________________|`````|_________________________
+<br>
+  child1_en _____________|`````````````|_______________|`````````````|________________|`````````````|_________
+<br>
+  child2_en ______________________________|``|__________________________|``|__________________________|``|____
+<br></font>
+child0_done __________|______________________________|______________________________|_________________________
+<br>
+child1_done ____________________________|____________________________|______________________________|_________
+<br>
+child2_done _________________________________|_____________________________|_____________________________|____
+
+                                             ^                             ^                             ^                     
+       
+                                             |_____________________________|_____________________________|                     
+       
+                                                               |                                      
+       
+                                                      3 iters/parent execution                                                                            
+
+</pre></tt>
+
+      </font>
+
+      </TABLE></div>
+      </TD>
+
+      <TD><font size = "6">View Sample Tree:<br>
+      <div data-role="collapsible">
+      <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+        <!--Begin Parent -->
+        <TD><b>Parent - <font color="red"> 91 cycles/iter<br><font size="2">(91 total cycles, 1 total iters)<br>[# iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+
+          <div data-role="collapsible">
+          <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+            <!--Begin Child0 -->
+            <TD><b>Child0 - <font color="red"> 5 cycles/iter<br><font size="2">(15 total cycles, 3 total iters)<br>[3 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+            <!--Begin Child0 -->
+            <TD><b>Child1 - <font color="red"> 13 cycles/iter<br><font size="2">(39 total cycles, 3 total iters)<br>[3 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+            <!--Begin Child0 -->
+            <TD><b>Child2 - <font color="red"> 2 cycles/iter<br><font size="2">(6 total cycles, 3 total iters)<br>[3 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+
+        </TABLE></div>
+        </TD>
+        <!-- Close Parent -->
+
+
+      </TABLE></div>
+      </TD>
+      <!-- Close View Tree -->
+
+    </TABLE></div>
+    </TD>
+    <!-- Close Sequential -->
+
+
+    <TD><font size = "6">ForkJoin (OuterControl)<br>
+    <div data-role="collapsible">
+    <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+
+      <TD><font size = "6">View Sample Waveform:<br>
+      <div data-role="collapsible">
+      <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+
+
+      <font size = "2"><tt><pre>
+
+    <TD><font size = "6">Sample Waveform:<br><font size = "2"><tt><pre><font color="red">
+  parent_en ____|````````````````|____|````````````````|____|````````````````|_____
+<br></font>
+parent_done _____________________|_____________________|_____________________|_____
+<font color="red">
+            5 cycles / iter
+                
+                <----->
+
+  child0_en ____|`````|________________|`````|_______________|`````|__________
+<br>
+  child1_en ____|`````````````|________|`````````````|_______|`````````````|__
+<br>
+  child2_en ____|``|___________________|``|__________________|``|_____________
+<br></font>
+child0_done __________|______________________|_____________________|__________
+<br>
+child1_done __________________|______________________|_____________________|__
+<br>
+child2_done _______|______________________|_____________________|_____________
+
+                   ^
+       
+                   |
+       
+                   |                                      
+       
+               1 iters/parent execution                                                                            
+
+</pre></tt>
+
+      </font>
+
+      </TABLE></div>
+      </TD>
+
+      <TD><font size = "6">View Sample Tree:<br>
+      <div data-role="collapsible">
+      <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+        <!--Begin Parent -->
+        <TD><b>Parent - <font color="red"> 16 cycles/iter<br><font size="2">(48 total cycles, 3 total iters)<br>[# iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+
+          <div data-role="collapsible">
+          <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+            <!--Begin Child0 -->
+            <TD><b>Child0 - <font color="red"> 5 cycles/iter<br><font size="2">(15 total cycles, 3 total iters)<br>[1 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+            <!--Begin Child0 -->
+            <TD><b>Child1 - <font color="red"> 13 cycles/iter<br><font size="2">(39 total cycles, 3 total iters)<br>[1 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+            <!--Begin Child0 -->
+            <TD><b>Child2 - <font color="red"> 2 cycles/iter<br><font size="2">(6 total cycles, 3 total iters)<br>[1 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+
+        </TABLE></div>
+        </TD>
+        <!-- Close Parent -->
+
+
+      </TABLE></div>
+      </TD>
+      <!-- Close View Tree -->
+
+    </TABLE></div>
+    </TD>
+    <!-- Close Parallel -->
+
+
+    <TD><font size = "6">Fork (OuterControl)<br>
+    <div data-role="collapsible">
+    <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+
+      <TD><font size = "6">View Sample Waveform:<br>
+      <div data-role="collapsible">
+      <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+
+
+      <font size = "2"><tt><pre>
+
+    <TD><font size = "6">Sample Waveform:<br><font size = "2"><tt><pre><font color="red">
+  parent_en ____|````````````````|____|````````````````|____|````````|_____________
+<br></font>
+parent_done _____________________|_____________________|_____________|_____________
+<font color="red">
+            5 cycles / iter
+                
+                <----->
+
+  child0_en _________________________________________________|`````|__________
+<br>
+  child1_en ____|`````````````|________|`````````````|________________________
+<br>
+  child2_en __________________________________________________________________
+<br></font>
+child0_done _______________________________________________________|__________
+<br>
+child1_done __________________|______________________|________________________
+<br>
+child2_done __________________________________________________________________
+
+                   ^
+       
+                   |
+       
+                   |                                      
+       
+               1 iters/parent execution                                                                            
+
+</pre></tt>
+
+      </font>
+
+      </TABLE></div>
+      </TD>
+
+      <TD><font size = "6">View Sample Tree:<br>
+      <div data-role="collapsible">
+      <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+        <!--Begin Parent -->
+        <TD><b>Parent - <font color="red"> 13 cycles/iter<br><font size="2">(40 total cycles, 3 total iters)<br>[# iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+
+          <div data-role="collapsible">
+          <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+            <!--Begin Child0 -->
+            <TD><b>Child0 - <font color="red"> 5 cycles/iter<br><font size="2">(5 total cycles, 1 total iters)<br>[1 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+            <!--Begin Child0 -->
+            <TD><b>Child1 - <font color="red"> 13 cycles/iter<br><font size="2">(26 total cycles, 2 total iters)<br>[1 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+            <!--Begin Child0 -->
+            <TD><b>Child2 - <font color="red"> 0 cycles/iter<br><font size="2">(0 total cycles, 0 total iters)<br>[0 iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font>
+            </TD>
+
+
+        </TABLE></div>
+        </TD>
+        <!-- Close Parent -->
+
+
+      </TABLE></div>
+      </TD>
+      <!-- Close View Tree -->
+
+    </TABLE></div>
+    </TD>
+    <!-- Close Parallel -->
+
+
+    <TD><font size = "6">Streaming (OuterControl)<br>
+    <div data-role="collapsible">
+    <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+      TBD (Complicated to show)<br><font size = 3>  Think of this as a ForkJoin but the enables are only valid when all of a given stage's input/output streams are valid/ready, respectively.
+      The Counters for the Streaming controller are duplicated so that each child has its own copy that runs independently of other siblings.</font>
+    </TABLE></div>
+    </TD>
+    <!-- Close Stream -->
+
+    <TD><font size = "6">*** (InnerControl)<br>
+    <div data-role="collapsible">
+    <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+
+      <TD><font size = "6">View Sample Waveform:<br>
+      <div data-role="collapsible">
+      <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+
+
+      <font size = "2"><tt><pre>
+
+    <TD><font size = "6">Sample Waveform:<br><font size = "2"><tt><pre><font color="red">
+  ctrl_en            ____|```````````````````````````|____|```````````````````````````|___________
+
+                              27 cycles / iter
+                
+                          <------------------------->                                                                
+
+<br> 
+  ctrl_datapath      ____|`|____|`|____|`|________________|`|____|`|____|`|_______________________
+
+
+                          II = 5
+                
+                          <---->                                                                
+
+
+<br></font>
+<font color="gray">
+  datapath (retimed) _____\______\______\__________________\______\______\________________________<br>
+                     ________\______\______\__________________\______\______\_____________________<br>
+                     ___________\______\______\__________________\______\______\__________________<br>
+                     ______________\______\______\__________________\______\______\_______________<br>
+                     _________________\______\______\__________________\______\______\____________<br>
+
+                           Latency = 12
+
+                          <------------>
+
+
+<br></font>
+ctrl_done            _________________________________|________________________________|__________
+
+</pre></tt>
+
+      </font>
+
+      </TABLE></div>
+      </TD>
+
+      <TD><font size = "6">View Sample Tree:<br>
+      <div data-role="collapsible">
+      <h4> </h4><TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+
+
+        <!--Begin Parent -->
+        <TD><b>Ctrl - <font color="red"> 27 cycles/iter<br><font size="2">(54 total cycles, 2 total iters)<br>[# iters/parent execution]</font></font></b></font><br><font size = "1">Counter: </font><br>
+          <p><mark style="border:1px; border-style:solid; border-color:black; padding: 1px; background: #ccc"><font size = "2">Latency=12,  <b>II=5</b></font></mark></p><br>
+          <font size = "3"> cycles/iter ~= Counter * II + latency
+        </TD>
+        <!-- Close Parent -->
+
+
+      </TABLE></div>
+      </TD>
+      <!-- Close View Tree -->
+
+    </TABLE></div>
+    </TD>
+    <!-- Close Parallel -->
+
+  </TABLE></div>
+  </TD>
+
+  </TABLE>
