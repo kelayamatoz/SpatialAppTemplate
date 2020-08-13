@@ -8,5 +8,9 @@ trait CommonParams {
   val baseAddr = d.I32(0)
   val i32 = d.I32(32)
   val i96 = d.I32(96)
+  val i1 = d.I32(1)
+  val i0 = d.I32(0)
   val ip = d.I32(16)
+  val ips = 16
+
 }

@@ -12,6 +12,7 @@ import spatial.dsl._
       0.1.to[T]
     })
 
+    // The hierarchical version seems to work better?
     Accel {
       val x_6_cache = SRAM[T](I32(32))
       Foreach(I32(32) by I32(1) par I32(1), I32(96) by I32(32) par I32(1)) {
